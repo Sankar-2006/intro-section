@@ -1,39 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+  <link rel="stylesheet" href="style.css" />
+
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
+  <header class="header">
+    <!-- Navigation section -->
+    <nav class="header__nav">
+      <!-- Logo and main navigation items -->
+      <aside class="header__aside">
+        <ul class="header__ul">
+          <li class="header__item">
+            <!-- Logo image -->
+            <img src="./images/logo.svg" alt="Snap-Logo" class="header__logo" />
+          </li>
+          <!-- Features dropdown -->
+          <li class="header__item header__item--features">
+            Features
+            <img src="./images/icon-arrow-down.svg" alt="arrow pointing down" class="header__icon header__icon--down" />
+            <img src="./images/icon-arrow-up.svg" alt="arrow pointing up" class="header__icon header__icon--up" />
+            <section class="header__dropdown">
+              <ul class="header__dropdown-list">
+                <li class="header__dropdown-item">Todo List</li>
+                <li class="header__dropdown-item">Calendar</li>
+                <li class="header__dropdown-item">Reminders</li>
+                <li class="header__dropdown-item">Planning</li>
+              </ul>
+            </section>
+          </li>
+          <!-- Company dropdown -->
+          <li class="header__item header__item--company">
+            Company
+            <img src="./images/icon-arrow-down.svg" alt="arrow pointing down" class="header__icon header__icon--down" />
+            <img src="./images/icon-arrow-up.svg" alt="arrow pointing up" class="header__icon header__icon--up" />
+            <section class="header__dropdown">
+              <ul class="header__dropdown-list">
+                <li class="header__dropdown-item">History</li>
+                <li class="header__dropdown-item">Our Team</li>
+                <li class="header__dropdown-item">Blog</li>
+              </ul>
+            </section>
+          </li>
+          <!-- Other navigation items -->
+          <li class="header__item header__item--careers">Careers</li>
+          <li class="header__item header__item--about">About</li>
+        </ul>
+      </aside>
 
-  Features
-  Company
-  Careers
-  About
+      <!-- Authentication section -->
+      <aside class="header__aside header__aside--auth">
+        <ul class="header__auth-list">
+          <li class="header__auth-item">Login</li>
+          <li class="header__auth-item">
+            <!-- Register button -->
+            <button class="header__register-button">Register</button>
+          </li>
+        </ul>
+      </aside>
+    </nav>
+  </header>
 
-  Login
-  Register
-
-  Make remote work
-
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
-
-  Learn more
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <main class="main">
+    <!-- Main content section -->
+    <section class="main__section">
+      <article class="main__article">
+        <h1 class="main__title">Make Remote Work</h1>
+        <p class="main__description">
+          Get your team in sync, no matter your location. Streamline
+          processes, create team rituals, and watch productivity soar.
+        </p>
+        <!-- Learn more button -->
+        <button class="main__learn-more-button">Learn More</button>
+      </article>
+      <!-- Client logos section -->
+      <article class="main__clients">
+        <img src="./images/client-databiz.svg" alt="Databiz Logo" class="main__client-logo" />
+        <img src="./images/client-audiophile.svg" alt="Audiophile Logo" class="main__client-logo" />
+        <img src="./images/client-meet.svg" alt="Meet Logo" class="main__client-logo" />
+        <img src="./images/client-maker.svg" alt="Maker Logo" class="main__client-logo" />
+      </article>
+    </section>
+    <!-- Hero image section -->
+    <section class="main__hero">
+      <!-- <img src="./images/image-hero-desktop.png" alt="A person with a laptop" class="main__hero-image" /> -->
+    </section>
+  </main>
 </body>
+
 </html>
